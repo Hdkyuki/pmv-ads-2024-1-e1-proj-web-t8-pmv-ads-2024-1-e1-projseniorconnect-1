@@ -1,0 +1,11 @@
+.principal {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .principal img {
+    width: 100%; /* Faz a imagem preencher 100% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços indesejados ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+  
