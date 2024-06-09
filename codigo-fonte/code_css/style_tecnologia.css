@@ -2,10 +2,136 @@
     text-align: center; /* Centraliza o conteúdo horizontalmente */
   }
   
-  .principal img {
+.principal img {
     width: 100%; /* Faz a imagem preencher 100% da largura da div */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Remove espaços indesejados ao redor da imagem */
     margin: 0 auto; /* Centraliza a imagem */
   }
+
+.lista{
+    width: 80%; /* Define a largura desejada */
+    margin: 0 auto; /* Centraliza a lista horizontalmente */
+    background-color: #ffffff;
+    padding: 20px; /* Espaçamento interno para a div */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    
+}  
+
+body{
+    background-color: #ECECEC;
+}
+
+.topico {
+    width: 95%; /* Define a largura do tópico */
+    display: flex; /* Exibe o conteúdo em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-bottom: 40px; /* Espaçamento inferior entre tópicos */
+    margin-top: 40px; 
+  }
   
+  .topico-imagem {
+    width: 10%; /* Define a largura da imagem */
+    max-width: 150px; /* Define a largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+  }
+  
+  .topico-texto {
+    width: 80%; /* Define a largura do texto */
+    padding: 0 10px; /* Espaçamento interno para o texto */
+    word-wrap: break-word; /* Força a quebra de linha */
+  }
+  
+  .topico-texto h3, .topico-texto p {
+    margin: 0; /* Remove as margens padrão */
+    padding: 5px 0; /* Espaçamento interno para o texto */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  .topico-botão {
+    margin-left: auto; /* Alinha o botão à direita */
+}
+.topico-texto p {
+    font-size: 20px; /* Define o tamanho da fonte para 18 pixels */
+}
+
+.button {
+    background-color: #00A3C6; /* Cor ciano */
+    border: none; /* Remove borda */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Exibe como bloco em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    margin-left: 1000px; /* Ajuste a margem esquerda conforme necessário */
+    margin-right: 0; /* Remove a margem direita para garantir o alinhamento correto */
+}
+
+
+  .button:hover {
+    background-color: #01748F; /* Cor ciano mais escura ao passar o mouse */
+  }
+
+  .navbar {
+    margin-bottom: 0 !important;
+    margin-top: 0; /* Remova a margem superior negativa */
+    padding: 10px 0; /* Adicione preenchimento ao topo e ao fundo */
+    background-color: rgba(173, 216, 230, 0.7); /* Defina a cor de fundo */
+    
+}
+
+.navbar-brand img {
+    width: 45px; /* Mantenha o tamanho do logo */
+    height: auto; /* Mantenha a proporção */
+    margin-right: 10px; /* Ajuste a margem direita conforme necessário */
+}
+
+.navbar-toggler {
+    background-color: transparent; /* Faça o botão do toggler transparente */
+    border: none; /* Remova a borda */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Defina a cor do ícone do toggler */
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #97694F; /* Defina a cor do texto do link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #543B26; /* Defina a cor do texto do link ao passar o mouse */
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover {
+    background-color: #3385ff;
+}
+
+.dropdown-menu {
+    background-color: #3385ff;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .navbar {
+        background-color: #3385ff !important;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end; /* Alinhe os itens da barra de navegação à direita */
+    }
+}
